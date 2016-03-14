@@ -1,8 +1,7 @@
 html
   head
     title Vitality
-
-  body#page-top
+  body#page-top data-spy="scroll" data-target=".navbar" data-offset="50"
     nav.navbar.navbar-inverse.navbar-fixed-top.navbar-expanded
       .container
         .navbar-header
@@ -37,30 +36,31 @@ html
           a.btn.page-scroll href='#about'
             i.fa.fa-angle-down.fa-fw
     section#about
-      .container-fluid
+      .container
         .row.text-center
           .col-lg-12
-            h1 A Theme fo Creatives & Agencies
+            h1 A Theme for Creatives & Agencies
             p Vitality is the perfect theme for a freelance progessional or an agency
             hr.colored
-        .row.text-center.content-row
+        .row.text-center
           .col-md-3.col-sm-6
-            .about-conten
+            .about-content
+              i.fa.fa-eye.fa-4x
               h3 Retina Ready
               p This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!
-        .row.text-center.content-row
           .col-md-3.col-sm-6
             .about-content
+              i.fa.fa-edit.fa-4x
               h3 Easy to Edit
               p Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.
-        .row.text-center.content-row
           .col-md-3.col-sm-6
             .about-content
+              i.fa.fa-tablet.fa-4x
               h3 Responsive
               p When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!
-        .row.text-center.content-row
           .col-md-3.col-sm-6
             .about-content
+              i.fa.fa-heart.fa-4x
               h3 Built with Love
               p All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.
     section#ourteam.bg-gray
@@ -70,16 +70,109 @@ html
             h2 Our Team
             p We are a group of digital marketers with a passion for great art that serves a pratical purpose.
             hr.colored
+        .row.content-row
+          .col-lg-12
+            #ourpeople.owl-carousel
+              .people
+                .item
+                  = image_tag "person_1.jpg", class: "img-responsive"
+                  .caption
+                    h3 Patricia West
+                    hr.colored
+                    p Marketing Director
+                    ul.list-inline.social
+                      li
+                        a href="#"
+                          i.fa.fa-facebook.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-twitter.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-linkedin.fa-fw
+                .item
+                  = image_tag "person_2.jpg", class: "img-responsive"
+                  .caption
+                    h3 Howard Scott
+                    hr.colored
+                    p Sales Manager
+                    ul.list-inline.social
+                      li
+                        a href="#"
+                          i.fa.fa-facebook.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-twitter.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-linkedin.fa-fw
+                .item
+                  = image_tag "person_3.jpg", class: "img-responsive"
+                  .caption
+                    h3 Kate Williams
+                    hr.colored
+                    p Creative Director
+                    ul.list-inline.social
+                      li
+                        a href="#"
+                          i.fa.fa-facebook.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-twitter.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-linkedin.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-dribbble.fa-fw
+                .item
+                  = image_tag "person_4.jpg", class: "img-responsive"
+                  .caption
+                    h3 Amy Vanderbute
+                    hr.colored
+                    p Graphic Artist
+                    ul.list-inline.social
+                      li
+                        a href="#"
+                          i.fa.fa-facebook.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-twitter.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-linkedin.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-dribbble.fa-fw
+                .item
+                  = image_tag "person_5.jpg", class: "img-responsive"
+                  .caption
+                    h3 Jeremy Davidson
+                    hr.colored
+                    p Web Developer
+                    ul.list-inline.social
+                      li
+                        a href="#"
+                          i.fa.fa-facebook.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-twitter.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-linkedin.fa-fw
+                      li
+                        a href="#"
+                          i.fa.fa-github.fa-fw
     aside.cta-quote
       .container
         .row
           .col-md-10.col-md-offset-1
             span.quote Good
-            span.text-primary design
+            span.text-highlight design
             span  is finding that perfect balance between the way something 
-            span.text-primary looks
+            span.text-highlight looks
             span  and how it 
-            span.text-primary functions
+            span.text-highlight functions
             span .
             hr.colored
             a.btn.btn-outline-light.page-scroll href="#contact" Let's Find It
@@ -91,31 +184,38 @@ html
           p Here is an overview of how we approach each new project.
         .row.content-row
           .col-md-4
-            .process
-              h3.process-heading plan
-              ul
-                li Client interview
-                li Gather consumer data
-                li Create content strategy
-                li Analyze research
-        .row.content-row
+            .media
+              .pull-left
+                i.fa.fa-clipboard
+              .process
+                h3.process-heading Plan
+                ul
+                  li Client interview
+                  li Gather consumer data
+                  li Create content strategy
+                  li Analyze research
           .col-md-4
-            .process
-              h3.process-heading Create
-              ul
-                li Build wireframe
-                li Gather client feedback
-                li Code development
-                li Marketing review
-        .row.content-row
+            .media
+              .pull-left
+                i.fa.fa-pencil
+              .process
+                h3.process-heading Create
+                ul
+                  li Build wireframe
+                  li Gather client feedback
+                  li Code development
+                  li Marketing review
           .col-md-4
-            .process
-              h3.process-heading Launch
-              ul
-                li Deploy website
-                li Market product launch
-                li Collect UX data
-                li Quarterly maintenence
+            .media
+              .pull-left
+                i.fa.fa-rocket
+              .process
+                h3.process-heading Launch
+                ul
+                  li Deploy website
+                  li Market product launch
+                  li Collect UX data
+                  li Quarterly maintenence
     section#work.bg-gray
       .container.text-center
         h2 Our Work
@@ -128,4 +228,3 @@ html
     section.cta-form
     section#contact
     footer
-
