@@ -2,6 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
+  $('.owl-carousel').owlCarousel()
+
   $('#ourpeople').owlCarousel
     autoPlay: 3000
     items: 4
@@ -13,5 +15,10 @@ $(document).ready ->
       979
       3
     ]
-  return
 
+  $('#portfolio-sample').owlCarousel
+  navigation: true
+  slideSpeed: 300
+  paginationSpeed: 400
+  singleItem: true
+  return
