@@ -1,7 +1,7 @@
 html
   head
     title Vitality
-  body#page-top data-spy="scroll" data-target=".navbar" data-offset="50"
+  body#page-top data-spy="scroll" data-target=".navbar" data-offset="50" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>"
     nav.navbar.navbar-inverse.navbar-fixed-top.navbar-expanded
       .container
         .navbar-header
@@ -258,6 +258,18 @@ html
         .row
           .col-lg-12
             .portfoliolist
+              .portfolio.indentity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
+              .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+              .portfolio.web.mix_all data-cat="web" href="#portfolioModal4" data-toggle="modal"
+              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal1" data-toggle="modal"
+              .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal4" data-toggle="modal"
+              .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
+              .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+              .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal4" data-toggle="modal"              
     section.tetimonials.br-gray
       .container
         .row
