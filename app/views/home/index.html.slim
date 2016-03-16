@@ -248,13 +248,13 @@ html
             .portfolio-filter
               ul#filters.clearfix.list-inline
                 li
-                  span.filter data-filter = "identity graphic logo web" All
+                  span.filter data-filter= "identity graphic logo web" All
                 li
-                  span.filter data-filter = "identity" Identity
+                  span.filter data-filter= "identity" Identity
                 li
-                  span.filter data-filter = "graphic" Graphic
+                  span.filter data-filter= "graphic" Graphic
                 li 
-                  span.filter data-filter = "web" Web
+                  span.filter data-filter= "web" Web
         .row
           .col-lg-12
             .portfoliolist
@@ -283,7 +283,7 @@ html
                 li.features-group-item 60 Users
                 li.features-group-item Unlimited Forums
                 li.features-group-item Unlimited Reports
-                li.features-group-item 3,000 Entries per Moth
+                li.features-group-item 3,000 Entries per Month
                 li.features-group-item 200 MB Storage
                 li.features-group-item Unlimited Support
               a.btn.btn-outline-dark href="#" Sign Up
@@ -300,7 +300,7 @@ html
                 li.features-group-item 60 Users
                 li.features-group-item Unlimited Forums
                 li.features-group-item Unlimited Reports
-                li.features-group-item 3,000 Entries per Moth
+                li.features-group-item 3,000 Entries per Month
                 li.features-group-item 200 MB Storage
                 li.features-group-item Unlimited Support
               a.btn.btn-outline-dark href="#" Sign Up
@@ -317,7 +317,7 @@ html
                 li.features-group-item 60 Users
                 li.features-group-item Unlimited Forums
                 li.features-group-item Unlimited Reports
-                li.features-group-item 3,000 Entries per Moth
+                li.features-group-item 3,000 Entries per Month
                 li.features-group-item 200 MB Storage
                 li.features-group-item Unlimited Support
               a.btn.btn-outline-dark href="#" Sign Up
@@ -334,4 +334,69 @@ html
                   span.input-group-btn
                     button.btn.btn-primary Subscribe!
     section#contact
-    footer
+      .container
+        .row
+          .col-lg-12.text-center
+            h2 Contact Us
+            hr.colored
+            p Please tell us about your next project and we will let you know what we can do to help you.
+        .row.content-row
+          .col-lg-8.col-lg-offset-2
+            form#contactForm name="sentMessage"
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  label Name
+                  input#name.form-control type="text" placeholder="Name"
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  label Email Address
+                  input#email.form-control type="email" placeholder="Email Address"
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  label Phone Number
+                  input#phone.form-control type="tel" placeholder="Phone Number"
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  label Message
+                  textarea#message.form-control rows="5" placeholder="Message"
+    a.btn.btn-block.btn-full-width href="#" Buy Vitality Now!
+    footer.footer
+      .container.text-center
+        .row
+          .col-md-4.contact-detail
+            h4
+              i.fa.fa-phone
+              span  Call
+            p 801-800-8181
+          .col-md-4.contact-detail
+            h4
+              i.fa.fa-map-marker
+              span  Visit
+            p 184 W Center St
+            p Provo, UT 84604
+          .col-md-4.contact-detail
+            h4
+              i.fa.fa-envelope
+              span  Email
+            p mail@example.com
+        .row-social
+          .col-lg-12
+            ul.list-inline
+              li
+                a href="#"
+                  i.fa.fa-facebook.fa-fw.fa-2x
+              li
+                a href="#"
+                  i.fa.fa-twitter.fa-fw.fa-2x
+              li
+                a href="#"
+                  i.fa.fa-linkedin.fa-fw.fa-2x
+        .row-copyright
+          .col-lg-12
+            p.small 
+              i.fa.fa-copyright
+              span  2015 Start Bootstrap Themes
+
+  script src="owl-carousel/owl.carousel.js"
+  script src="assets/js/home.coffee"
+  
