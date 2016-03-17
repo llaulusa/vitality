@@ -28,6 +28,18 @@ body{
 .navbar-header{
 
 }
+
+hr.colored{
+  max-width: 200px;
+  margin:20px auto;
+  border: 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 2px;
+  border-color:#ef4035;
+
+}
+
 /*------------Header------------- */
 
 header{
@@ -73,17 +85,6 @@ header{
   font-weight: 900;
 }
 
-hr{
-  max-width: 200px;
-  margin:20px auto;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  height: 2px;
-
-}
-hr.colored {
-  border-color:#ef4035;
-}
 
 header .scroll-down .btn{
   height: 50px;
@@ -114,6 +115,7 @@ header .scroll-down .btn{
 	margin-bottom: 20px;
 	}
 }
+
 .text-center{
   text-align: center;
 }
