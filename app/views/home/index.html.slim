@@ -1,18 +1,18 @@
 html
   head
-    title Vitality
+    title My Vitality
   body#page-top data-spy="scroll" data-target=".navbar" data-offset="50" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>"
     nav.navbar.navbar-inverse.navbar-fixed-top.navbar-expanded
       .container
         .navbar-header
-          button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
             span.sr-only Toggle Navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
           a.navbar-brand.page-scroll href="#page-top"
             = image_tag "logo.png", class: "img-responsive"
-        .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        .collapse.navbar-collapse#navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.hidden.active
               a.page-scroll href="#page-top"
@@ -29,7 +29,7 @@ html
     header 
       .header-content
         = image_tag "profile.png", class: "img-responsive", class: "img-centered"
-        .brand-name Vitality
+        .brand-name.text-center Vitality
         hr.colored
         .brand-subtext by Start Bootstrap
         .scroll-down
@@ -73,7 +73,7 @@ html
         .row.content-row
           .col-lg-12
             #ourpeople
-              .people.owl-carousel.owl-theme
+              .people.owl-carousel
                 .item
                   = image_tag "person_1.jpg", class: "img-responsive"
                   .caption
