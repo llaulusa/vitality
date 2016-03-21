@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.5.0'
+gem 'google-webfonts-rails', '~> 0.0.4'
 gem 'animate-scss'
 gem 'auto_js', git:"https://github.com/lasaldan/auto_js"
 
