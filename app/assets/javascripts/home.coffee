@@ -2,23 +2,12 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
-  $('.owl-carousel').owlCarousel()
+  window.addEventListener 'scroll', (->
+    if window.scrollY > 350
+      $('.navbar').addClass('navbar-inverse')
+    else
+      $('.navbar').removeClass('navbar-inverse')
+    return
+  ), false
 
-  $('#ourpeople').owlCarousel
-    autoPlay: 3000
-    items: 4
-    itemsDesktop: [
-      1199
-      3
-    ]
-    itemsDesktopSmall: [
-      979
-      3
-    ]
-
-  $('#portfolio-sample').owlCarousel
-  navigation: true
-  slideSpeed: 300
-  paginationSpeed: 400
-  singleItem: true
-  return
+ 
