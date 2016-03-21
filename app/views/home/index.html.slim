@@ -2,7 +2,7 @@ html
   head
     title My Vitality
   body#page-top data-spy="scroll" data-target=".navbar" data-offset="50" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>"
-    nav.navbar.navbar-inverse.navbar-fixed-top.navbar-expanded
+    nav.navbar.navbar-fixed-top.navbar-expanded
       .container
         .navbar-header
           button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
@@ -28,13 +28,14 @@ html
               a.page-scroll href="#contact" Contact
     header 
       .header-content
-        = image_tag "profile.png", class: "img-responsive", class: "img-centered"
-        .brand-name.text-center Vitality
-        hr.colored
-        .brand-subtext by Start Bootstrap
-        .scroll-down
-          a.btn.page-scroll href='#about'
-            i.fa.fa-angle-down.fa-fw
+        .vitality
+          = image_tag "profile.png", class: "img-responsive", class: "img-centered"
+          .brand-name.text-center Vitality
+          hr.colored
+          .brand-subtext by Start Bootstrap
+      .scroll-down
+        a.btn.page-scroll href='#about'
+          i.fa.fa-angle-down.fa-fw
     section#about
       .container
         .row.text-center
