@@ -1,0 +1,25 @@
+nav.navbar.navbar-fixed-top.navbar-expanded
+  .container
+    .navbar-header
+      button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
+        span.sr-only Toggle Navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.page-scroll href="#page-top"
+        = image_tag "logo.png", class: "img-responsive"
+    .collapse.navbar-collapse#navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li.hidden.active
+          a.page-scroll href="#page-top"
+        li
+          a.page-scroll href="#about" About
+        li
+          a.page-scroll href="#process" Process
+        li
+          a.page-scroll href="#work" Work
+        li
+          a.page-scroll href="#pricing" Pricing
+        li
+          a.page-scroll href="#contact" Contact
+

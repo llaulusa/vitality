@@ -1,414 +1,392 @@
-html
-  head
-    title My Vitality
-  body#page-top data-spy="scroll" data-target=".navbar" data-offset="50" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>"
-    nav.navbar.navbar-inverse.navbar-fixed-top.navbar-expanded
-      .container
-        .navbar-header
-          button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
-            span.sr-only Toggle Navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand.page-scroll href="#page-top"
-            = image_tag "logo.png", class: "img-responsive"
-        .collapse.navbar-collapse#navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li.hidden.active
-              a.page-scroll href="#page-top"
-            li
-              a.page-scroll href="#about" About
-            li
-              a.page-scroll href="#process" Process
-            li
-              a.page-scroll href="#work" Work
-            li
-              a.page-scroll href="#pricing" Pricing
-            li
-              a.page-scroll href="#contact" Contact
-    header 
-      .header-content
-        = image_tag "profile.png", class: "img-responsive", class: "img-centered"
-        .brand-name.text-center Vitality
+/html
+/  head
+/    title My Vitality
+/    link rel="stylesheet" href="owlcarousel/owl.carousel.min.css"
+/    link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"
+/    script src="jquery.min.js"
+/    script src="owl.carousel.min.js"
+body#page-top data-spy="scroll" data-target=".navbar" data-offset="50"
+ header 
+  .header-content
+    .vitality
+      = image_tag "profile.png", class: "img-responsive", class: "img-centered"
+      .brand-name.text-center Vitality
+      hr.colored
+      .brand-subtext by Start Bootstrap
+  .scroll-down
+    a.btn.page-scroll href='#about'
+      i.fa.fa-angle-down.fa-fw
+section#about
+  .container
+    .row.text-center
+      .col-lg-12
+        h1 A Theme for Creatives & Agencies
+        p Vitality is the perfect theme for a freelance progessional or an agency
         hr.colored
-        .brand-subtext by Start Bootstrap
-        .scroll-down
-          a.btn.page-scroll href='#about'
-            i.fa.fa-angle-down.fa-fw
-    section#about
-      .container
-        .row.text-center
-          .col-lg-12
-            h1 A Theme for Creatives & Agencies
-            p Vitality is the perfect theme for a freelance progessional or an agency
-            hr.colored
-        .row.text-center
-          .col-md-3.col-sm-6
-            .about-content
-              i.fa.fa-eye.fa-4x
-              h3 Retina Ready
-              p This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!
-          .col-md-3.col-sm-6
-            .about-content
-              i.fa.fa-edit.fa-4x
-              h3 Easy to Edit
-              p Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.
-          .col-md-3.col-sm-6
-            .about-content
-              i.fa.fa-tablet.fa-4x
-              h3 Responsive
-              p When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!
-          .col-md-3.col-sm-6
-            .about-content
-              i.fa.fa-heart.fa-4x
-              h3 Built with Love
-              p All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.
-    section#ourteam.bg-gray
-      .container.text-center
+    .row.text-center
+      .col-md-3.col-sm-6
+        .about-content
+          i.fa.fa-eye.fa-4x
+          h3 Retina Ready
+          p This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!
+      .col-md-3.col-sm-6
+        .about-content
+          i.fa.fa-edit.fa-4x
+          h3 Easy to Edit
+          p Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.
+      .col-md-3.col-sm-6
+        .about-content
+          i.fa.fa-tablet.fa-4x
+          h3 Responsive
+          p When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!
+      .col-md-3.col-sm-6
+        .about-content
+          i.fa.fa-heart.fa-4x
+          h3 Built with Love
+          p All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.
+section#ourteam.bg-gray
+  .container.text-center
+    .row
+      .col-lg-12
+        h2 Our Team
+        p We are a group of digital marketers with a passion for great art that serves a pratical purpose.
+        hr.colored
+    .row.content-row
+      .col-lg-12
+        #ourpeople
+          .owl-carousel.owl-theme
+            .item
+              = image_tag "person_1.jpg", class: "img-responsive"
+              .caption
+                h3 Patricia West
+                hr.colored
+                p Marketing Director
+                ul.list-inline.social
+                  li
+                    a href="#"
+                      i.fa.fa-facebook.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-twitter.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-linkedin.fa-fw
+            .item
+              = image_tag "person_2.jpg", class: "img-responsive"
+              .caption
+                h3 Howard Scott
+                hr.colored
+                p Sales Manager
+                ul.list-inline.social
+                  li
+                    a href="#"
+                     i.fa.fa-facebook.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-twitter.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-linkedin.fa-fw
+            .item
+              = image_tag "person_3.jpg", class: "img-responsive"
+              .caption
+                h3 Kate Williams
+                hr.colored
+                p Creative Director
+                ul.list-inline.social
+                  li
+                    a href="#"
+                      i.fa.fa-facebook.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-twitter.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-linkedin.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-dribbble.fa-fw
+            .item
+              = image_tag "person_4.jpg", class: "img-responsive"
+              .caption
+                h3 Amy Vanderbute
+                hr.colored
+                p Graphic Artist
+                ul.list-inline.social
+                  li
+                    a href="#"
+                      i.fa.fa-facebook.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-twitter.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-linkedin.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-dribbble.fa-fw
+            .item
+              = image_tag "person_5.jpg", class: "img-responsive"
+              .caption
+                h3 Jeremy Davidson
+                hr.colored
+                p Web Developer
+                ul.list-inline.social
+                  li
+                    a href="#"
+                      i.fa.fa-facebook.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-twitter.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-linkedin.fa-fw
+                  li
+                    a href="#"
+                      i.fa.fa-github.fa-fw
+aside.cta-quote
+  .container
+    .row
+      .col-md-10.col-md-offset-1
+        span.quote 
+          span Good 
+          span.text-highlight design 
+          span is finding that perfect balance between the way something 
+          span.text-highlight looks 
+          span and how it 
+          span.text-highlight functions
+          span .
+        hr.colored
+        a.btn.btn-outline-light.page-scroll href="#contact" Let's Find It
+section#process
+  .contianer
+    .row.text-center
+      h1 Our Process
+      hr.colored
+      p Here is an overview of how we approach each new project.
+    .row.content-row
+      .col-md-4
+        .media
+          .pull-left
+            i.fa.fa-clipboard
+          .process
+            h3.process-heading Plan
+            ul
+              li Client interview
+              li Gather consumer data
+              li Create content strategy
+              li Analyze research
+      .col-md-4
+        .media
+          .pull-left
+            i.fa.fa-pencil
+          .process
+            h3.process-heading Create
+            ul
+              li Build wireframe
+              li Gather client feedback
+              li Code development
+              li Marketing review
+      .col-md-4
+        .media
+          .pull-left
+            i.fa.fa-rocket
+          .process
+            h3.process-heading Launch
+            ul
+              li Deploy website
+              li Market product launch
+              li Collect UX data
+              li Quarterly maintenence
+section#work.bg-gray
+  .container.text-center
+    h2 Our Work
+    hr.colored
+    p Examples of our work which represent our design and marketing capabilities.
+section.portfolio-carousel.wow.fadeIn.owl-carousel.owl-theme.animated
+  .outer-wrapper.autoHeight
+    .item.bg-1
+      .container-fluid
         .row
-          .col-lg-12
-            h2 Our Team
-            p We are a group of digital marketers with a passion for great art that serves a pratical purpose.
-            hr.colored
-        .row.content-row
-          .col-lg-12
-            #ourpeople
-              .people.owl-carousel
-                .item
-                  = image_tag "person_1.jpg", class: "img-responsive"
-                  .caption
-                    h3 Patricia West
-                    hr.colored
-                    p Marketing Director
-                    ul.list-inline.social
-                      li
-                        a href="#"
-                          i.fa.fa-facebook.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-twitter.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-linkedin.fa-fw
-                .item
-                  = image_tag "person_2.jpg", class: "img-responsive"
-                  .caption
-                    h3 Howard Scott
-                    hr.colored
-                    p Sales Manager
-                    ul.list-inline.social
-                      li
-                        a href="#"
-                          i.fa.fa-facebook.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-twitter.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-linkedin.fa-fw
-                .item
-                  = image_tag "person_3.jpg", class: "img-responsive"
-                  .caption
-                    h3 Kate Williams
-                    hr.colored
-                    p Creative Director
-                    ul.list-inline.social
-                      li
-                        a href="#"
-                          i.fa.fa-facebook.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-twitter.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-linkedin.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-dribbble.fa-fw
-                .item
-                  = image_tag "person_4.jpg", class: "img-responsive"
-                  .caption
-                    h3 Amy Vanderbute
-                    hr.colored
-                    p Graphic Artist
-                    ul.list-inline.social
-                      li
-                        a href="#"
-                          i.fa.fa-facebook.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-twitter.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-linkedin.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-dribbble.fa-fw
-                .item
-                  = image_tag "person_5.jpg", class: "img-responsive"
-                  .caption
-                    h3 Jeremy Davidson
-                    hr.colored
-                    p Web Developer
-                    ul.list-inline.social
-                      li
-                        a href="#"
-                          i.fa.fa-facebook.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-twitter.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-linkedin.fa-fw
-                      li
-                        a href="#"
-                          i.fa.fa-github.fa-fw
-    aside.cta-quote
-      .container
-        .row
-          .col-md-10.col-md-offset-1
-            span.quote 
-              span Good 
-              span.text-highlight design 
-              span is finding that perfect balance between the way something 
-              span.text-highlight looks 
-              span and how it 
-              span.text-highlight functions
-              span .
-            hr.colored
-            a.btn.btn-outline-light.page-scroll href="#contact" Let's Find It
-    section#process
-      .contianer
-        .row.text-center
-          h1 Our Process
+          .col-md-4.col-md-push-8
+            .project-detail
+              = image_tag "project-logo-1.png", class: "img-responsive"
+              span.project-name Project Name
+              br
+              span.project-description Branding, Website Design
+              hr.colored
+              a href= "#" data-toggle="modal" class= "btn btn-outline-light" View Details
+                i.fa.fa-long-arrow-right.fa-fw
+          .col-md-8.col-md-pull-4.hidden-xs
+            = image_tag "mobile-screens.png", class: "portfolio-image", class: "img-responsive"
+section.portfolio
+  .container.text-center
+    h2 Portfolio
+    hr.colored
+    p here are some other projects that we've worked on.
+    .row.content-row
+      .col-lg-12
+        .portfolio-filter
+          ul#filters.clearfix.list-inline
+            li
+              span.filter data-filter= "identity graphic logo web" All
+            li
+              span.filter data-filter= "identity" Identity
+            li
+              span.filter data-filter= "graphic" Graphic
+            li 
+              span.filter data-filter= "web" Web
+    .row
+      .col-lg-12
+        .portfoliolist
+          .portfolio.indentity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
+          .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+          .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+          .portfolio.web.mix_all data-cat="web" href="#portfolioModal4" data-toggle="modal"
+          .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal1" data-toggle="modal"
+          .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+          .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+          .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal4" data-toggle="modal"
+          .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
+          .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+          .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+          .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal4" data-toggle="modal"              
+section.tetimonials.br-gray
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+section#pricing.pricing
+  .container
+    .row.text-center
+      .col-lg-12
+        h2 Pricing
+        hr.colored
+        p Count catcher golden sombrero moneyball rubber game, stretch mendoza line. Glove 4-bagger robbed yankees take cheese game. Starter sacrifice bunt basehit manager suicide squeeze relay earned run forkball.
+    .row.content-row
+      .col-md-4
+        .pricing-cat.featured-first
+          h3 Basic
           hr.colored
-          p Here is an overview of how we approach each new project.
-        .row.content-row
-          .col-md-4
-            .media
-              .pull-left
-                i.fa.fa-clipboard
-              .process
-                h3.process-heading Plan
-                ul
-                  li Client interview
-                  li Gather consumer data
-                  li Create content strategy
-                  li Analyze research
-          .col-md-4
-            .media
-              .pull-left
-                i.fa.fa-pencil
-              .process
-                h3.process-heading Create
-                ul
-                  li Build wireframe
-                  li Gather client feedback
-                  li Code development
-                  li Marketing review
-          .col-md-4
-            .media
-              .pull-left
-                i.fa.fa-rocket
-              .process
-                h3.process-heading Launch
-                ul
-                  li Deploy website
-                  li Market product launch
-                  li Collect UX data
-                  li Quarterly maintenence
-    section#work.bg-gray
-      .container.text-center
-        h2 Our Work
+          .price
+            span.number
+              sup $
+              span 25
+              span " / month"
+          ul.features-group
+            li.features-group-item 60 Users
+            li.features-group-item Unlimited Forums
+            li.features-group-item Unlimited Reports
+            li.features-group-item 3,000 Entries per Month
+            li.features-group-item 200 MB Storage
+            li.features-group-item Unlimited Support
+          a.btn.btn-outline-dark href="#" Sign Up
+      .col-md-4
+        .pricing-cat.featured
+          h3 Plus
+          hr.colored
+          .price
+            span.number
+              sup $
+              span 50
+              span "/"month
+          ul.features-group
+            li.features-group-item 60 Users
+            li.features-group-item Unlimited Forums
+            li.features-group-item Unlimited Reports
+            li.features-group-item 3,000 Entries per Month
+            li.features-group-item 200 MB Storage
+            li.features-group-item Unlimited Support
+          a.btn.btn-outline-dark href="#" Sign Up
+      .col-md-4
+        .pricing-cat.featured-last
+          h3 Premium
+          hr.colored
+          .price
+            span.number
+              sup $
+              span 150
+              span '/'month
+          ul.features-group
+            li.features-group-item 60 Users
+            li.features-group-item Unlimited Forums
+            li.features-group-item Unlimited Reports
+            li.features-group-item 3,000 Entries per Month
+            li.features-group-item 200 MB Storage
+            li.features-group-item Unlimited Support
+          a.btn.btn-outline-dark href="#" Sign Up
+section.cta-form.bg-dark
+  .container.text-center
+    h3 Subscribe to our newletter!
+    hr.colored
+    .row
+      .col-lg-8.col-lg-offset-2
+        #email-subscribe
+          form
+            .input-group.input-group-lg
+              input.form-control type="email" name="EMAIL" placeholder="Email address..."
+              span.input-group-btn
+                button.btn.btn-primary Subscribe!
+section#contact
+  .container
+    .row
+      .col-lg-12.text-center
+        h2 Contact Us
         hr.colored
-        p Examples of our work which represent our design and marketing capabilities.
-    section.portfolio-carousel.wow.fadeIn.owl-carousel.owl-theme.animated
-      .outer-wrapper.autoHeight
-        .item.bg-1
-          .container-fluid
-            .row
-              .col-md-4.col-md-push-8
-                .project-detail
-                  = image_tag "project-logo-1.png", class: "img-responsive"
-                  span.project-name Project Name
-                  br
-                  span.project-description Branding, Website Design
-                  hr.colored
-                  a href= "#" data-toggle="modal" class= "btn btn-outline-light" View Details
-                    i.fa.fa-long-arrow-right.fa-fw
-              .col-md-8.col-md-pull-4.hidden-xs
-                = image_tag "mobile-screens.png", class: "portfolio-image", class: "img-responsive"
-    section.portfolio
-      .container.text-center
-        h2 Portfolio
-        hr.colored
-        p here are some other projects that we've worked on.
-        .row.content-row
-          .col-lg-12
-            .portfolio-filter
-              ul#filters.clearfix.list-inline
-                li
-                  span.filter data-filter= "identity graphic logo web" All
-                li
-                  span.filter data-filter= "identity" Identity
-                li
-                  span.filter data-filter= "graphic" Graphic
-                li 
-                  span.filter data-filter= "web" Web
-        .row
-          .col-lg-12
-            .portfoliolist
-              .portfolio.indentity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
-              .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
-              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
-              .portfolio.web.mix_all data-cat="web" href="#portfolioModal4" data-toggle="modal"
-              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal1" data-toggle="modal"
-              .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
-              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
-              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal4" data-toggle="modal"
-              .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
-              .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
-              .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
-              .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal4" data-toggle="modal"              
-    section.tetimonials.br-gray
-      .container
-        .row
-          .col-lg-10.col-lg-offset-1
-    section#pricing.pricing
-      .container
-        .row.text-center
-          .col-lg-12
-            h2 Pricing
-            hr.colored
-            p Count catcher golden sombrero moneyball rubber game, stretch mendoza line. Glove 4-bagger robbed yankees take cheese game. Starter sacrifice bunt basehit manager suicide squeeze relay earned run forkball.
-        .row.content-row
-          .col-md-4
-            .pricing-cat.featured-first
-              h3 Basic
-              hr.colored
-              .price
-                span.number
-                  sup $
-                  span 25
-                  span " / month"
-              ul.features-group
-                li.features-group-item 60 Users
-                li.features-group-item Unlimited Forums
-                li.features-group-item Unlimited Reports
-                li.features-group-item 3,000 Entries per Month
-                li.features-group-item 200 MB Storage
-                li.features-group-item Unlimited Support
-              a.btn.btn-outline-dark href="#" Sign Up
-          .col-md-4
-            .pricing-cat.featured
-              h3 Plus
-              hr.colored
-              .price
-                span.number
-                  sup $
-                  span 50
-                  span "/"month
-              ul.features-group
-                li.features-group-item 60 Users
-                li.features-group-item Unlimited Forums
-                li.features-group-item Unlimited Reports
-                li.features-group-item 3,000 Entries per Month
-                li.features-group-item 200 MB Storage
-                li.features-group-item Unlimited Support
-              a.btn.btn-outline-dark href="#" Sign Up
-          .col-md-4
-            .pricing-cat.featured-last
-              h3 Premium
-              hr.colored
-              .price
-                span.number
-                  sup $
-                  span 150
-                  span '/'month
-              ul.features-group
-                li.features-group-item 60 Users
-                li.features-group-item Unlimited Forums
-                li.features-group-item Unlimited Reports
-                li.features-group-item 3,000 Entries per Month
-                li.features-group-item 200 MB Storage
-                li.features-group-item Unlimited Support
-              a.btn.btn-outline-dark href="#" Sign Up
-    section.cta-form.bg-dark
-      .container.text-center
-        h3 Subscribe to our newletter!
-        hr.colored
-        .row
-          .col-lg-8.col-lg-offset-2
-            #email-subscribe
-              form
-                .input-group.input-group-lg
-                  input.form-control type="email" name="EMAIL" placeholder="Email address..."
-                  span.input-group-btn
-                    button.btn.btn-primary Subscribe!
-    section#contact
-      .container
-        .row
-          .col-lg-12.text-center
-            h2 Contact Us
-            hr.colored
-            p Please tell us about your next project and we will let you know what we can do to help you.
-        .row.content-row
-          .col-lg-8.col-lg-offset-2
-            form#contactForm name="sentMessage"
-              .row.control-group
-                .form-group.col-xs-12.floating-label-form-group.controls
-                  label Name
-                  input#name.form-control type="text" placeholder="Name"
-              .row.control-group
-                .form-group.col-xs-12.floating-label-form-group.controls
-                  label Email Address
-                  input#email.form-control type="email" placeholder="Email Address"
-              .row.control-group
-                .form-group.col-xs-12.floating-label-form-group.controls
-                  label Phone Number
-                  input#phone.form-control type="tel" placeholder="Phone Number"
-              .row.control-group
-                .form-group.col-xs-12.floating-label-form-group.controls
-                  label Message
-                  textarea#message.form-control rows="5" placeholder="Message"
-    a.btn.btn-block.btn-full-width href="#" Buy Vitality Now!
-    footer.footer
-      .container.text-center
-        .row
-          .col-md-4.contact-detail
-            h4
-              i.fa.fa-phone
-              span  Call
-            p 801-800-8181
-          .col-md-4.contact-detail
-            h4
-              i.fa.fa-map-marker
-              span  Visit
-            p 184 W Center St
-            p Provo, UT 84604
-          .col-md-4.contact-detail
-            h4
-              i.fa.fa-envelope
-              span  Email
-            p mail@example.com
-        .row-social
-          .col-lg-12
-            ul.list-inline
-              li
-                a href="#"
-                  i.fa.fa-facebook.fa-fw.fa-2x
-              li
-                a href="#"
-                  i.fa.fa-twitter.fa-fw.fa-2x
-              li
-                a href="#"
-                  i.fa.fa-linkedin.fa-fw.fa-2x
-        .row-copyright
-          .col-lg-12
-            p.small 
-              i.fa.fa-copyright
-              span  2015 Start Bootstrap Themes
+        p Please tell us about your next project and we will let you know what we can do to help you.
+    .row.content-row
+      .col-lg-8.col-lg-offset-2
+        form#contactForm name="sentMessage"
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              label Name
+              input#name.form-control type="text" placeholder="Name"
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              label Email Address
+              input#email.form-control type="email" placeholder="Email Address"
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              label Phone Number
+              input#phone.form-control type="tel" placeholder="Phone Number"
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              label Message
+              textarea#message.form-control rows="5" placeholder="Message"
+a.btn.btn-block.btn-full-width href="#" Buy Vitality Now!
+footer.footer
+  .container.text-center
+    .row
+      .col-md-4.contact-detail
+        h4
+          i.fa.fa-phone
+          span  Call
+        p 801-800-8181
+      .col-md-4.contact-detail
+        h4
+          i.fa.fa-map-marker
+          span  Visit
+        p 184 W Center St
+        p Provo, UT 84604
+      .col-md-4.contact-detail
+        h4
+          i.fa.fa-envelope
+          span  Email
+        p mail@example.com
+    .row-social
+      .col-lg-12
+        ul.list-inline
+          li
+            a href="#"
+              i.fa.fa-facebook.fa-fw.fa-2x
+          li
+            a href="#"
+              i.fa.fa-twitter.fa-fw.fa-2x
+          li
+            a href="#"
+              i.fa.fa-linkedin.fa-fw.fa-2x
+    .row-copyright
+      .col-lg-12
+        p.small 
+          i.fa.fa-copyright
+          span  2015 Start Bootstrap Themes
 
-  script src="owl-carousel/owl.carousel.js"
-  script src="assets/js/home.coffee"
-  

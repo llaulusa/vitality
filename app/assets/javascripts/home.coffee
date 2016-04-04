@@ -3,11 +3,18 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
   window.addEventListener 'scroll', (->
-    if window.scrollY > 500
-      $('.navbar').removeClass('.navbar-expanded')
+    if window.scrollY > 350
+      $('.navbar').addClass('navbar-inverse')
     else
-      $('.navbar').addClass('.navbar-expanded')
+      $('.navbar').removeClass('navbar-inverse')
     return
   ), false
 
+  $('.owl-carousel').owlCarousel
+    margin: 10
+    nav: false
+    navText: [
+      "<i class='fa fa-angle-left'></i>"
+      "<i class='fa fa-angle-right'></i>"
+    ]
  
