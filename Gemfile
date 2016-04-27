@@ -27,8 +27,9 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'google-webfonts-rails', '~> 0.0.4'
-gem 'animate-scss'
+gem 'animate.css-rails', '~> 3.2.0'
 gem 'auto_js', git:"https://github.com/lasaldan/auto_js"
+gem 'mixitup_rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

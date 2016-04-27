@@ -1,23 +1,16 @@
-/html
-/  head
-/    title My Vitality
-/    link rel="stylesheet" href="owlcarousel/owl.carousel.min.css"
-/    link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"
-/    script src="jquery.min.js"
-/    script src="owl.carousel.min.js"
 body#page-top data-spy="scroll" data-target=".navbar" data-offset="50"
  header 
   .header-content
     .vitality
-      = image_tag "profile.png", class: "img-responsive", class: "img-centered"
+      = image_tag "profile.png", class: "img-responsive img-centered"
       .brand-name.text-center Vitality
       hr.colored
       .brand-subtext by Start Bootstrap
-  .scroll-down
-    a.btn.page-scroll href='#about'
-      i.fa.fa-angle-down.fa-fw
+      .scroll-down
+        a.btn.page-scroll href='#about'
+          i.fa.fa-angle-down.fa-fw
 section#about
-  .container
+  .container-fluid
     .row.text-center
       .col-lg-12
         h1 A Theme for Creatives & Agencies
@@ -168,7 +161,7 @@ section#process
       .col-md-4
         .media
           .pull-left
-            i.fa.fa-clipboard
+            i.fa.fa-clipboard.fa-2x
           .process
             h3.process-heading Plan
             ul
@@ -179,7 +172,7 @@ section#process
       .col-md-4
         .media
           .pull-left
-            i.fa.fa-pencil
+            i.fa.fa-pencil.fa-2x
           .process
             h3.process-heading Create
             ul
@@ -190,7 +183,7 @@ section#process
       .col-md-4
         .media
           .pull-left
-            i.fa.fa-rocket
+            i.fa.fa-rocket.fa-2x
           .process
             h3.process-heading Launch
             ul
@@ -203,8 +196,7 @@ section#work.bg-gray
     h2 Our Work
     hr.colored
     p Examples of our work which represent our design and marketing capabilities.
-section.portfolio-carousel.wow.fadeIn.owl-carousel.owl-theme.animated
-  .outer-wrapper.autoHeight
+section.portfolio-carousel.wow.fadeIn.owl-carousel.owl-theme
     .item.bg-1
       .container-fluid
         .row
@@ -216,14 +208,15 @@ section.portfolio-carousel.wow.fadeIn.owl-carousel.owl-theme.animated
               span.project-description Branding, Website Design
               hr.colored
               a href= "#" data-toggle="modal" class= "btn btn-outline-light" View Details
-                i.fa.fa-long-arrow-right.fa-fw
+              i.fa.fa-long-arrow-right.fa-fw
           .col-md-8.col-md-pull-4.hidden-xs
-            = image_tag "mobile-screens.png", class: "portfolio-image", class: "img-responsive"
+            = image_tag "mobile-screens.png", class: "portfolio-image img-responsive"
 section.portfolio
   .container.text-center
     h2 Portfolio
+
     hr.colored
-    p here are some other projects that we've worked on.
+    p Here are some other projects that we've worked on.
     .row.content-row
       .col-lg-12
         .portfolio-filter
@@ -238,23 +231,145 @@ section.portfolio
               span.filter data-filter= "web" Web
     .row
       .col-lg-12
-        .portfoliolist
+        #portfoliolist
           .portfolio.indentity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "idenity-1.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Generic Inc.
+                  span.text-category Brand Identity
+                .caption-bg
           .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "web-1.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Brands
+                  span.text-category Web Development
+                .caption-bg
           .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "graphic-1.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Execellence
+                  span.text-category Poster Design
+                .caption-bg
           .portfolio.web.mix_all data-cat="web" href="#portfolioModal4" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "web-2.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title YouTV
+                  span.text-category Web Development
+                .caption-bg
           .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal1" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "graphic-2.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Office Supplies
+                  span.text-category Graphic Design
+                .caption-bg
           .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "web-3.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Fooder
+                  span.text-category Mobile App
+                .caption-bg
           .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "graphic-3.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Mountain Tea
+                  span.text-category Graphic Design
+                .caption-bg
           .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal4" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "graphic-4.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Checkmark
+                  span.text-category Graphic Design
+                .caption-bg
           .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal1" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "idenity-2.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Demish
+                  span.text-category Brand Identity
+                .caption-bg
           .portfolio.web.mix_all data-cat="web" href="#portfolioModal2" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "web-4.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title OneRepublic
+                  span.text-category Web Development
+                .caption-bg
           .portfolio.graphic.mix_all data-cat="graphic" href="#portfolioModal3" data-toggle="modal"
+            .portfolio-wrapper
+              = image_tag "graphic-5.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Postable
+                  span.text-category Graphic Design
+                .caption-bg
           .portfolio.identity.mix_all data-cat="identity" href="#portfolioModal4" data-toggle="modal"              
-section.tetimonials.br-gray
+            .portfolio-wrapper
+              = image_tag "idenity-3.jpg", class: "img"
+              .caption
+                .caption-text
+                  a.text-title Simpli Nota
+                  span.text-category Brand Identity
+                .caption-bg
+section.testimonials
   .container
     .row
       .col-lg-10.col-lg-offset-1
+        .testimonials-carousel.owl-carousel.owl-theme
+          .item
+            .row
+              .col-lg-12
+                p.lead "Working with Vitality was both a vaulable and rewarding experience"
+                hr.colored
+                p.quote Field tapper line drive grand slam backstop strike zone loss. Loss gold glove disabled list mustard bench loogy arm plate relief pitcher. Ground rule double ground ball butcher boy rainout slugging retire appeal sabremetrics. Tapper run batted in warning track rope in the hole tapper on-base percentage fan.
+                .testimonial-info
+                  .testimonial-img
+                    =image_tag "testimonial-1.jpg", class:"img-circle img-responsive"
+                  .testimonial-author
+                    span.name Jim Walker
+                    p.small CEO of GeneriCorp
+                    .stars
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+          .item
+            .row
+              .col-lg-12
+                p.lead "Working with Vitality was both a vaulable and rewarding experience"
+                hr.colored
+                p.quote Field tapper line drive grand slam backstop strike zone loss. Loss gold glove disabled list mustard bench loogy arm plate relief pitcher. Ground rule double ground ball butcher boy rainout slugging retire appeal sabremetrics. Tapper run batted in warning track rope in the hole tapper on-base percentage fan.
+                .testimonial-info
+                  .testimonial-img
+                    =image_tag "testimonial-1.jpg", class: "img-circle img-responsive"
+                  .testimonial-author
+                    span.name Jim Walker
+                    p.small CEO of GeneriCorp
+                    .stars
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-sta w wr
+
 section#pricing.pricing
   .container
     .row.text-center
